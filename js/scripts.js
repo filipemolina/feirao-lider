@@ -46,4 +46,6 @@ $(function(){
 
 	///////////////////////////////////// As chamadas de eventos do jQuery devem ser inseridas aqui
 
+	
+
 })
