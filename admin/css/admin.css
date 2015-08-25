@@ -62,3 +62,8 @@ div.login
   width: 400px;
   margin: 0 auto;
 }
+
+.panel
+{
+  min-height: 164px;
+}

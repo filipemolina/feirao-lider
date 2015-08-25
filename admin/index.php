@@ -54,10 +54,31 @@
 
 			<div class="row link">
 				<a href="javascript:void(0)" class="logout">Sair</a>
-				<a href="javascript:void(0)" onclick="fnExcelReport();" class="export">Exportar</a>
 			</div>
 
-			<div class="col-md-4 col-md-offset-4">
+			<div class="col-md-4 col-md-offset-2">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Filtrar por Concessionária</h3>
+					</div>
+					<div class="panel-body">
+						<div class="row padding-0">
+							<div class="col-md-12">
+								<select name="concessionarias" id="concessionarias" class="form-control">
+									<option value="0">Selecione uma Concessionária</option>
+								</select>
+							</div>
+						</div>
+						<div class="row padding-0">
+							<div class="col-md-12 num_total">
+								<a href="javascript:void(0)" class="btn btn-default" id="link-filtrar">Filtrar Resultados</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-2">
 				<div class="panel panel-default inscricoes">
 					<div class="panel-heading">
 						<h3 class="panel-title">Inscrições Gerais</h3>
@@ -72,10 +93,32 @@
 					</div>
 				</div>
 			</div>
+
+			<div class="col-md-2">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Opções</h3>
+					</div>
+					<div class="panel-body">
+						<div class="row padding-0">
+							<div class="col-md-12">
+								Gerar Relatório
+							</div>
+						</div>
+						<div class="row padding-0">
+							<div class="col-md-12 num_total">
+								<a href="exportar.php" class="btn btn-primary" id="link-exportar">Exportar</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
 		</div>
 
 		<table class="table table-striped lista" id="lista">
 			<tr>
+				<th class="centralizar">id:</th>
 				<th class="centralizar">Nome:</th>
 				<th class="centralizar">E-mail:</th>
 				<th class="centralizar">Telefone:</th>

@@ -6,17 +6,24 @@ require('../includes/connection.php');
 
 if($_SERVER['REQUEST_METHOD'] == 'POST')
 {
-	if($_POST['username'] == 'admin' && $_POST['password'] == 't301t4')
+	// Iniciar a conexão
+
+	$conexao = new Connection;
+
+	// Buscar o usuário no banco de dados
+
+	$resultado = $conexao->select('usuarios', array('usuario' => $_POST['username']));
+
+	// Comparar a senha do banco com a senha fornecida pelo usuário
+
+	if($resultado[0]['senha'] == base64_encode($_POST['password']))
 	{
-		// Iniciar a conexão
-
-		$conexao = new Connection;
-
 		// Retornar uma lista de dados
 
 		$resultados = $conexao->select('contatos');
 
-		return json_encode($resultados);
+		echo json_encode($resultados);
+		exit;
 	}
 	else
 	{

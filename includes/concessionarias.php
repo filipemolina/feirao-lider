@@ -30,7 +30,19 @@
 		}
 		else
 		{
-			return "Forneça um ID de montadora";
+			//Iniciar a conexão com o banco
+			$conexao = new Connection;
+
+			$resultado = $conexao->select('concessionarias');
+
+			if(count($resultado) > 0)
+			{
+				echo json_encode($resultado);
+			}
+			else
+			{
+				echo "Nenhum carro";
+			}
 		}
 	}
 

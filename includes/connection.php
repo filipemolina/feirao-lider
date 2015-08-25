@@ -130,13 +130,12 @@ class Connection
 
 			if(!$resultado)
 			{
-				echo json_encode($this->pdo->errorInfo());
-				exit;
+				return $this->pdo->errorInfo();
 			}
 			else
 			{
 				$resultado = $resultado->fetchAll();
-				echo json_encode($resultado);
+				return $resultado;
 			}
 		}
 		else
@@ -192,7 +191,7 @@ class Connection
 			if($executa)
 			{
 		   		$this->erros = array();
-		   		return $statement->fetchAll(PDO::FETCH_OBJ);
+		   		return $statement->fetchAll();
 			}
 			else
 			{

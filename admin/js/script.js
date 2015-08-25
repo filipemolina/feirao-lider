@@ -45,10 +45,18 @@ function fnExcelReport()
 
 // Função que obtém os dados do banco e preenche a tabela
 
-function preencheTabela()
+function preencheTabela(dados)
 {
 	var checkbox;
 	var carteirinha;
+
+	// Esvaziar a tabela
+
+	$(".table").find("tr:gt(0)").remove();
+
+	// Zerar o número de inscritor
+
+	App.inscritos = 0;
 
 	for(dado in dados)
 	{
@@ -57,7 +65,7 @@ function preencheTabela()
 		$.ajax({
 		  type: 'POST',
 		  url: "busca.php",
-		  data: {'objeto' : 'carros', 'id' : dados[dado].id_carro},
+		  data: {'objeto' : 'carros', campos : { 'id' : dados[dado].id_carro } },
 		  success: function(data)
 			{ 
 				var resultado = JSON.parse(data); 
@@ -71,7 +79,7 @@ function preencheTabela()
 		$.ajax({
 		  type: 'POST',
 		  url: "busca.php",
-		  data: {'objeto' : 'concessionarias', 'id' : dados[dado].id_carro},
+		  data: {'objeto' : 'concessionarias', campos : { 'id' : dados[dado].id_carro } },
 		  success: function(data)
 			{ 
 				var resultado = JSON.parse(data); 
@@ -84,7 +92,7 @@ function preencheTabela()
 
 		App.inscritos++;
 
-		$(".table").append("<tr><td>"+dados[dado].nome+"</td><td>"+dados[dado].email+"</td><td>"+dados[dado].tel+"</td><td>"+dados[dado].entrada+"</td><td class='centralizar'>"+dados[dado].prestacoes+"</td><td class='centralizar'>"+App.carro+"</td><td class='centralizar'>"+App.concessionaria+"</td><td><a class='abre-modal' href='javascript:void(0)' onclick='trocaConteudo(\""+dados[dado].mensagem+"\")' data-toggle='modal' data-target='#myModal'>Mensagem</a></td></tr>");
+		$(".table").append("<tr><td>"+dados[dado].id+"</td><td>"+dados[dado].nome+"</td><td>"+dados[dado].email+"</td><td>"+dados[dado].tel+"</td><td>"+dados[dado].entrada+"</td><td class='centralizar'>"+dados[dado].prestacoes+"</td><td class='centralizar'>"+App.carro+"</td><td class='centralizar'>"+App.concessionaria+"</td><td><a class='abre-modal' href='javascript:void(0)' onclick='trocaConteudo(\""+dados[dado].mensagem+"\")' data-toggle='modal' data-target='#myModal'>Mensagem</a></td></tr>");
 	}
 
 	// Mostrar os valores nos boxes de resultados
@@ -92,16 +100,26 @@ function preencheTabela()
 	// Totais
 
 	$(".inscricoes .panel-body .num_total").html(App.inscritos);
-	$(".carteirinhas .panel-body .num_total").html(App.inscritos_carteirinha);
-	$(".participantes .panel-body .num_total").html(App.total_participantes);
-
-	// Confirmados
-
-	$(".inscricoes .num_confirmados").html(App.confirmados);
-	$(".carteirinhas .num_confirmados").html(App.confirmados_carteirinha);
-	$(".participantes .num_confirmados").html(App.confirmados_participantes);
 
 	$(".table, .resultados").addClass("fadeInUp animated");
+}
+
+// Função que obtém todas as concessionárias cadastradas e preenche o select de relatórios
+
+function preencheSelect()
+{
+	$.get('../includes/concessionarias.php', { 1 : 1 }, function(data){
+
+		dados = JSON.parse(data);
+
+		for(dado in dados)
+		{
+			// Criar os options dentro do select
+
+			$("select#concessionarias").append("<option value='"+dados[dado].id+"'>"+dados[dado].nome+"</option>");
+		}
+
+	});
 }
 
 $(function(){
@@ -136,6 +154,8 @@ $(function(){
 	{
 		$("#loginform").addClass('fadeInLeft animated');
 	}
+
+	preencheSelect();
 
 	////////////////////////////////////////////////////// Submit do Formulário de Login
 
@@ -181,59 +201,51 @@ $(function(){
 
 	});
 
-	////////////////////////////////////////////////////// Click do Checkbox de confirmar presença
+	////////////////////////////////////////////////////// Mudar a Concessionária
 
-	$(".table").on('click', 'input[type=checkbox]', function(){
+	$("a#link-filtrar").click(function(){
 
-		var elemento = $(this);
+		// Id Selecionado
 
-		$.post("confirmar.php", { id : $(this).val(), confirmado : $(this).prop('checked') }, function(data){
+		var id = $('select#concessionarias').val();
 
-			// Obter o número da carteirinha do usuário confirmado
+		var nome = $('select#concessionarias option:selected').text();
 
-			var numero_carteirinha = $(elemento).parent('td').prev('td').html();
+		if(id == 0)
+		{
+			// Buscar os dados filtrados e preencher novamente a tabela
 
-			// Obter o número de pessoas
+			$.post('busca.php', { objeto : 'contatos' }, function(data){
 
-			var numero_pessoas = parseFloat($(elemento).parent('td').prev('td').prev('td').html());
+				var dados = JSON.parse(data);
 
-			// Caso o checkbox tenha sido clicado para confirmar mais um usuário, aumentar em 1 o número nos boxes,
-			// caso contrário diminuir.
-			
-			if(data == "true")
-			{
-				App.confirmados++;
-				App.confirmados_participantes += numero_pessoas;
+				preencheTabela(dados);
 
-				// Caso o usuário tenha carteirinha, alterar o número lá também
+			});
+		}
+		else
+		{
+			// Buscar os dados filtrados e preencher novamente a tabela
 
-				if(numero_carteirinha != "-")
-				{
-					App.confirmados_carteirinha++;
-				}
-			}
-			else
-			{
-				App.confirmados--;
-				App.confirmados_participantes -= numero_pessoas;
+			$.post('busca.php', { objeto : 'contatos', campos : { id_concessionaria : id } }, function(data){
 
-				// Caso o usuário tenha carteirinha, alterar o número lá também
+				var dados = JSON.parse(data);
 
-				if(numero_carteirinha != "-")
-				{
-					App.confirmados_carteirinha--;
-				}
-			}
+				preencheTabela(dados);
 
-			// Atualizar os dados nos boxes
+			});
+		}
 
-			$(".inscricoes .num_confirmados").html(App.confirmados);
-			$(".carteirinhas .num_confirmados").html(App.confirmados_carteirinha);
-			$(".participantes .num_confirmados").html(App.confirmados_participantes);
+		// Mudar o link de exportação do formulário
 
-			
-
-		});
+		if(id != 0)
+		{
+			$("a#link-exportar").attr('href', 'exportar.php?concessionaria=' + id + "&nome=" + nome);
+		}
+		else
+		{
+			$("a#link-exportar").attr('href', 'exportar.php');
+		}
 
 	});
 
