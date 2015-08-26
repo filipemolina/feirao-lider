@@ -86,7 +86,7 @@ body{
 	height: 70%;
 }
 .honda_banner-oferta_01{
-	background: url(../img/honda/Site_FeiraoOnline_Interna-HONDA_1.jpg);
+	background: url(../img/honda/Site_FeiraoOnline_Interna-HONDA_1.jpg) no-repeat;
 	width: 100%;
 	background-position: center;
 	height: 670px;
@@ -95,7 +95,7 @@ body{
 
 }
 .honda_banner-oferta_02{
-	background: url(../img/honda/Site_FeiraoOnline_Interna-HONDA_2.jpg);
+	background: url(../img/honda/Site_FeiraoOnline_Interna-HONDA_2.jpg) no-repeat;
 	width: 100%;
 	background-position: center;
 	height: 670px;
@@ -104,7 +104,7 @@ body{
 	
 }
 .honda_banner-oferta_03{
-	background: url(../img/honda/Site_FeiraoOnline_Interna-HONDA_3.jpg);
+	background: url(../img/honda/Site_FeiraoOnline_Interna-HONDA_3.jpg) no-repeat;
 	width: 100%;
 	background-position: center;
 	height: 670px;
@@ -117,7 +117,7 @@ body{
 	font-size: 53px;
 	color: #1b1b20;
 	font-weight: bold;
-	line-height: 35px;
+	line-height: 38px;
 	padding: 70px 0; 
 }
 .titulo-form span{
@@ -141,7 +141,7 @@ body{
 }
 .msg{
 	width: 360px;
-	height: 200px;
+	height: 172px;
 }
 .name-forms{
 	font-size: 18px;

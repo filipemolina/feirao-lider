@@ -78,15 +78,9 @@
 					</div>
 					<span class="name-forms">Selecione um carro</span>
 					<select class="form-control" id="car-honda" name="carro">
-					<option value="">1</option>
-					<option value="">2</option>
-					<option value="">3</option>
 					</select>
 					<span class="name-forms">Selecione uma concessionária</span>
-					<select class="form-control" name="concessionaria">
-					<option value="">1</option>
-					<option value="">2</option>
-					<option value="">3</option>
+					<select class="form-control" id="conse-honda" name="concessionaria">
 					</select>
 				</div>
 
@@ -104,8 +98,7 @@
 				<h2>Telefone<img src="img/tel.jpg" style="margin-top:-20px;"></h2>
 				<p>Encontre a concessionária mais perto de você</p>
 				<select name=""class="form-control">
-					<<option value="">teste 123</option>}
-					option
+					<option value="">teste 123</option>
 				</select>
 				<h3>Volkswagem Recreio - Rio de Janeiro, RJ</h3>
 				<h4>(21) 2176-9400</h4>
@@ -136,30 +129,35 @@
 
 		<!-- Conteúdo temporário para testar o formulario de contatos -->
 
+
+
 		<script>
 
 		$(function(){
 
+		alert('dados');
 			//////////////////////////////////////////////////// Exemplo de como preencher o select de concessionárias e carros:
 
-			//preencheConcessionarias("#car-honda", '6');
-			//preencheCarros("#car-honda", '2');
+			preencheConcessionarias( '#conse-honda', '1');
+			//preencheCarros('#conse-honda', '1');
 
 			// Substituir o 2 pelo id da montadora de acordo com o banco de dados
 
 			//////////////////////////////////////////////////// Como obter todas as concessionárias:
 
-			// 	$.get('includes/concessionarias.php', function(data){ 
-			//		var dados = JSON.parse(data);
-			//	});
+			 	$.get('includes/concessionarias.php', function(data){ 
+					var dados = JSON.parse(data);
+				});
 
 			// A variavel dados será um vetor de objetos com as propriedades de acordo com o banco de dados (nome, endereco, telefone...)
 
 			//////////////////////////////////////////////////// Como obter as concessionárias de uma montadora específica
 
-				//$.get('includes/concessionarias.php', { montadora : 6 }, function(data){ 
-				//	var dados = JSON.parse(data);
-			//});
+				$.get('includes/concessionarias.php', { montadora : 6 }, function(data){ 
+					var dados = JSON.parse(data);
+
+					
+			});
 
 			// Substituir 'id_montadora' por um integer que é o id da montadora no banco de dados.
 			// O resultado será o mesmo da função anterior
@@ -167,6 +165,8 @@
 		})
 
 		</script>
+
+
 
 <?php require_once('includes/footer.php'); ?>
 
