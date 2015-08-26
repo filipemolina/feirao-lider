@@ -78,5 +78,5 @@ if($_SERVER['REQUEST_METHOD'] === 'POST')
 
 	// Retornar sem nenhum erro
 
-	echo "cadastrou seu nenhum erro";
+	echo "";
 }

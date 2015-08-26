@@ -25,7 +25,8 @@
 			}
 			else
 			{
-				echo "Nenhum carro";
+				$retorno = array('id' => '', 'nome' => '');
+				echo json_encode($retorno);
 			}
 		}
 		else

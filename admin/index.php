@@ -164,16 +164,4 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script src="js/script.js" type="text/javascript"></script>
 
-	<script>
-
-	$(function(){
-
-		//Exemplo de como preencher o select de concessionárias
-
-		//preencherConcessionaria("#selecte", '2');
-
-	})
-
-	</script>
-
 </body>

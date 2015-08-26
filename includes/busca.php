@@ -1,29 +1,39 @@
 <?php
 
-require_once "connection.php";
+require "../includes/connection.php";
 
-// Realizar a busca apenas se o request for POST
-
-if($_SERVER['REQUEST_METHOD'] == "POST")
+if($_SERVER['REQUEST_METHOD'] == 'POST')
 {
-	// Obter os dados do Post
-
-	$dados = $_POST;
-
-	// Iniciar a conexão com o banco
+	$objeto = $_POST['objeto'];
 
 	$conexao = new Connection;
 
-	// Buscar a carteirinha no banco de dados
+	// Retornar o nome do objeto selecionado à partir do ID (Carro ou concessionária)
 
-	$resultado = $conexao->select('carteiras', array('carteira' => $dados['carteirinha']));
-
-	if(count($resultado) > 0)
+	if(isset($_POST['campos']))
 	{
-		echo json_encode($resultado[0]);
+
+		if(isset($_POST['campos']['id']))
+		{
+			// Caso o usuário esteja procurando pelo ID, retornar apenas 1 resultado
+
+			$resultado = $conexao->select($objeto, $_POST['campos']);
+			echo json_encode($resultado[0]);
+		}
+		else
+		{
+			// Caso contrário, retornar todos os resultados
+
+			$resultado = $conexao->select($objeto, $_POST['campos']);
+			echo json_encode($resultado);
+		}
+
 	}
 	else
 	{
-		echo "inexistente";
+		// Caso o usuário não tenha fornecido campos para pesquisar, retornar todos os resultados da tabela
+
+		$resultado = $conexao->select($objeto);
+		echo json_encode($resultado);
 	}
 }

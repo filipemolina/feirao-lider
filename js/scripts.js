@@ -27,8 +27,8 @@ function preencheConcessionarias(id_select, montadora)
 
 function preencheCarros(id_select, montadora)
 {
-	$.get("includes/concessionarias.php", { montadora : montadora }, function(data) 
-	{ 
+	$.get("includes/carros.php", { montadora : montadora }, function(data) 
+	{
 
 		var dados = JSON.parse(data);
 
@@ -42,9 +42,152 @@ function preencheCarros(id_select, montadora)
 	});
 }
 
+function dadosConcessionarias(id_concessionaria)
+{
+
+	$.post('includes/busca.php', { objeto : 'concessionarias', campos : { id : id_concessionaria }}, function(data)
+	{ 
+		
+		var dados = JSON.parse(data);
+
+		console.log("Chamou a ajax");
+
+		$("#nome-concessionaria").html(dados.nome);
+
+		$("#telefone-concessionaria").html(dados.telefone);
+		
+		return dados;
+
+	});
+}
+
 $(function(){
 
 	///////////////////////////////////// As chamadas de eventos do jQuery devem ser inseridas aqui
+
+	// Submit do form de contato
+
+	$("#form-contato").submit(function(e){
+
+		e.preventDefault();
+
+		var erros = false;
+		var msg = [];
+
+		var nome = $("#nome").val();
+		var email = $("#email").val();
+		var telefone = $("#telefone").val();
+		var entrada = $("#entrada").val();
+		var prestacoes = $("#prestacoes").val();
+		var carro = $("#carro").val();
+		var concessionaria = $("#concessionaria").val();
+		var mensagem = $("#mensagem").val();
+
+		if(nome == '')
+		{
+			erros = true;
+			msg.push("Preencha o campo nome.");
+		}
+
+		if(email == '')
+		{
+			erros = true;
+			msg.push("Preencha o campo email.");
+		}
+
+		if(telefone == '')
+		{
+			erros = true;
+			msg.push("Preencha o campo telefone.");
+		}
+
+		if(entrada == '')
+		{
+			erros = true;
+			msg.push("Preencha o campo entrada.");
+		}
+
+		if(prestacoes == '')
+		{
+			erros = true;
+			msg.push("Preencha o campo prestações.");
+		}
+
+		if(carro == '')
+		{
+			erros = true;
+			msg.push("Preencha o campo carro.");
+		}
+
+		if(concessionaria == '')
+		{
+			erros = true;
+			msg.push("Preencha o campo concessionária.");
+		}
+
+		if(mensagem == '')
+		{
+			erros = true;
+			msg.push("Preencha o campo mensagem.");
+		}
+
+		if(erros)
+		{
+			// Zerar o conteúdo da div de alertas
+
+			$("div.alertas").html('');
+
+			// Adicionar os novos alertas
+
+			for(mensagens in msg)
+			{
+				$("div.alertas").append('<div class="alert alert-danger" role="alert">'+msg[mensagens]+'</div>');
+			}
+		}
+		else
+		{
+			$.post("includes/cadastro.php", 
+			{
+				nome : nome,
+				email : email,
+				telefone : telefone,
+				mensagem : mensagem,
+				entrada : entrada,
+				prestacoes : prestacoes,
+				carro : carro,
+				concessionaria : concessionaria,
+
+			}, function(data){
+
+				// Caso não tenha havido nenhum erro
+				
+				if(data == '')
+				{
+					// Zerar o conteúdo da div de alertas
+
+					$("div.alertas").html('');
+
+					// Informar que o cadastro foi efetuado com sucesso
+
+					$("div.alertas").append('<div class="alert alert-success" role="alert">Cadastro realizado com sucesso</div>');				}
+
+					// Zerar o formulário
+
+					$("#nome").val('');
+					$("#email").val('');
+					$("#telefone").val('');
+					$("#mensagem").val('');
+					$("#entrada").val('');
+					$("#prestacoes").val('');
+					$("#carro").val(0);
+					$("#concessionaria").val(0);
+
+			})
+		}
+
+		return false;
+
+	});
 
 	
 
