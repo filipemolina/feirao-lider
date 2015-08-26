@@ -1,0 +1,242 @@
+*{
+	margin: 0;
+}
+body{
+
+}
+/* --------- MENU ----------- */
+.menu{
+	font-family: 'Source Sans Pro', sans-serif;
+	padding: 12px 0;
+	height: 90px;
+}
+.menu img{
+	float: left;
+}
+.menu ul{
+	float: left;
+	margin-top:15px;
+}
+.menu li {
+	float: left;
+	margin-left: 20px;
+	list-style-type: none;
+	font-size: 26px;
+	color:#ff0000;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.menu a {
+	float: left;
+	text-decoration: none;
+	color:#ffffff;
+	text-transform: uppercase;
+	background: #ff0000;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 21px;
+	font-weight: bold;
+	margin-top: 15px;
+	box-shadow: 2px 3px #ba0000;
+}
+/* ------------ END MENU ------------ */
+
+.banner{
+	background: url(../img/liderautofest_banner.jpg);
+	background-position: center;
+	width: 100%;
+	height: 560px;
+}
+
+.titulo-marca{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bold;
+	font-size: 17px;
+	color:#727272;
+	text-align: center;
+}
+.marcas-logos{
+	width: 750px;
+	margin: 0 auto;
+	padding: 20px 0;
+	height: 90px;
+}
+.marcas-logos li{
+	list-style: none;
+	float: left;
+	margin-left: 20px;
+}
+.marcas-logos img{
+	width: 70%;
+	height: 70%;
+}
+.marcas-logos2{
+	width: 750px;
+	margin: 0 auto;
+	padding: 20px 0;
+	height: 90px;
+}
+.marcas-logos2 li{
+	list-style: none;
+	float: left;
+	margin-left: 20px;
+}
+.marcas-logos2 img{
+	width: 70%;
+	height: 70%;
+}
+.honda_banner-oferta_01{
+	background: url(../img/honda/Site_FeiraoOnline_Interna-HONDA_1.jpg);
+	width: 100%;
+	background-position: center;
+	height: 670px;
+	background-color: #f7f7f7;
+	margin-top: 2px;
+
+}
+.honda_banner-oferta_02{
+	background: url(../img/honda/Site_FeiraoOnline_Interna-HONDA_2.jpg);
+	width: 100%;
+	background-position: center;
+	height: 670px;
+	background-color: #e4ebed;
+	margin: 2px;
+	
+}
+.honda_banner-oferta_03{
+	background: url(../img/honda/Site_FeiraoOnline_Interna-HONDA_3.jpg);
+	width: 100%;
+	background-position: center;
+	height: 670px;
+	background-color: #f5f6f7;
+	margin: 2px;
+	
+}
+.titulo-form{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 53px;
+	color: #1b1b20;
+	font-weight: bold;
+	line-height: 35px;
+	padding: 70px 0; 
+}
+.titulo-form span{
+	font-weight: lighter;
+	font-size: 31px;
+}
+.ent-prest{
+	width: 100%;
+}
+.ent{
+	width: 230px;
+	float: left;
+	margin-right: 30px;
+}
+.form-entrada{
+	width: 230px;
+}
+.form-prestacao{
+	width: 90px;
+
+}
+.msg{
+	width: 360px;
+	height: 200px;
+}
+.name-forms{
+	font-size: 18px;
+	color: #c80004;
+	font-weight: bold;
+	font-family: 'Source Sans Pro', sans-serif;
+	line-height: 35px;	
+
+}
+.enviar{
+	float: right;
+	margin-top: 20px;
+	width: 180px;
+	height: 40px;
+	background: rgb(189, 0, 3);
+	border-bottom: 2px solid rgb(170, 0, 3);
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-radius: 6px;
+	color: #ffffff;
+	font-weight: bold;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+
+}
+.tel h2{
+	font-weight: bold;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 28px;
+	color:#bd0003;
+}
+.tel p{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 19px;
+	color: #3e3e40;
+
+}
+.tel select{
+	width: 400px;
+	height: 43px;
+	font-size: 22px;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #3e3e40;
+
+}
+.tel h3{
+	color: #bd0003;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+}
+.tel h4{
+	font-size: 35px;
+	font-weight: bold;
+	color:#3e3e40;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.chat h2{
+	font-weight: bold;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 28px;
+	color:#bd0003;
+}
+.chat p{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 19px;
+	color: #3e3e40;
+	padding-bottom: 10px;
+}
+.chat a{
+	text-decoration: none;
+	color: #ffffff;
+	background: #bd0003;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	border-bottom: 2px solid #aa0003;
+	border-radius: 6px;
+	padding: 10px 70px;
+	margin-left: 35px;
+}
+.texto-legal{
+	font-size: 11px;
+    margin-top: 50px;
+    text-align: justify;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #7f7f7f;
+}
+.gl{
+	width: 200px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+.desen{
+	width: 160px;
+	margin: 50px auto;
+}
