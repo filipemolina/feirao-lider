@@ -240,3 +240,23 @@ body{
 	width: 160px;
 	margin: 50px auto;
 }
+
+h2.index
+{
+	text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #777;
+}
+
+div.gl.index
+{
+	margin-top: 60px;
+}
+
+h3.copy {
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #777;
+}
