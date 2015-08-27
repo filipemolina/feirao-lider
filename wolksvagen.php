@@ -1,4 +1,4 @@
-<?php require_once('includes/header_fiat.php'); ?>
+<?php require_once('includes/header_volswagen.php'); ?>
 
 		<!-- Conteúdo -->
 
@@ -16,12 +16,12 @@
 		<!-- ---- marcas ---- -->
 
 		<h1 class="titulo-marca">VEJA OFERTAS DE OUTROS FABRICANTES</h1>
-		
-		<?php require_once('includes/menu-marcas.php'); ?>
-		<div class="fiat_banner-oferta_01"><a href="" class="compre chat-zopim btn-chat-fiat">Compre agora</a></div>
-		<div class="fiat_banner-oferta_02"><a href="" class="compre chat-zopim btn-chat-fiat">Compre agora</a></div>
-		<div class="fiat_banner-oferta_03"><a href="" class="compre chat-zopim btn-chat-fiat">Compre agora</a></div>
 
+		<?php require_once('includes/menu-marcas.php'); ?>
+
+		<div class="vw_banner-oferta_01"><a href="" class="compre chat-zopim btn-chat-vw">Compre agora</a></div>
+		<div class="vw_banner-oferta_02"><a href="" class="compre chat-zopim btn-chat-vw">Compre agora</a></div>
+		<div class="vw_banner-oferta_03"><a href="" class="compre chat-zopim btn-chat-vw">Compre agora</a></div>
 
 
 
@@ -38,13 +38,11 @@
 					
 				</div>
 
-				<input type="hidden" name="montadora" id="montadora" value="3">
-
 				<div class="col-md-4">
 					<span class="name-forms">Nome</span>
 					<input type="text" class="form-control" name="nome" id="nome"/>
 					<span class="name-forms">Email</span>
-					<input type="email" class="form-control" name="email" id="email"/>
+					<input type="text" class="form-control" name="email" id="email"/>
 					<span class="name-forms">Telefone</span>
 					<input type="text" class="form-control" name="telefone" id="telefone"/>
 				</div>
@@ -52,7 +50,7 @@
 				<div class="col-md-4">
 					<div class="ent-prest">
 						<div class="ent">
-						<span class="name-forms">Entrada</span>
+						<span class="name-forms">Entranda</span>
 						<select class="form-entrada form-control" name="entrada" id="entrada">
 						<option value="10%">10%</option>
 						<option value="20%">20%</option>
@@ -95,7 +93,7 @@
 			</form>
 		</div>
 		<div class="container">
-			<h1 class="titulo-form duvidas"><span>TIRE SUAS </span></br>DÚVIDAS</h1>
+			<h1 class="titulo-form"><span>TIRE SUAS </span></br>DÚVIDAS</h1>
 			<div class="tel col-md-6">
 				<h2>Telefone<img src="img/tel.jpg" style="margin-top:-20px;"></h2>
 				<p>Encontre a concessionária mais perto de você</p>
@@ -108,19 +106,24 @@
 			<div class="chat col-md-6">
 				<h2>Chat<img src="img/chat.jpg" style="margin-top:-20px;"></h2>
 				<p>Fale com os nossos vendedores online</p>
-				<a href="javascript:void(0)" class="chat-zopim">Iniciar Chat</a>
+				<a href="">Iniciar Chat</a>
 			</div>
 		</div>
 		<div class="container">	
-			<p class="texto-legal">Siena EL 1.0 completo 15/15, R$ 36.990,00 á vista ou entrada (R$23.300,00) + 48 parcelas de R$ 399,00. Taxa de 1,29%. CET de 19,13%. Total financiado R$ 42.486,56. Consulte as devidas taxas e condições com nossos vendedores. Crédito sujeito a aprovação da financeira. Promoções válidas enquanto durarem os estoques. Imagens meramente ilustrativas. Uno Vivace 2P 15/15: Uno Vivace Básica  2P 15/15, R$ 25.990,00 á vista ou entrada (R$18.400,00) + 60 parcelas deR$ 199,00. Taxa de 1,35%. CET de 21,38%. Total financiado R$ 30.354,40. Consulte as devidas taxas e condições com nossos vendedores. Crédito sujeito a aprovação da financeira. Promoções válidas enquanto durarem os estoques. Imagens meramente ilustrativas. Palio Fire 2P 15/16: Palio Fire Básica 2P 15/16, R$ 26.990,00 á vista ou entrada (R$16.740,00) + 48 parcelas de R$ 299,00. Taxa de 1,19%. CET de 19,13%. Total financiado R$ 31.105,44. Consulte as devidas taxas e condições com nossos vendedores. Crédito sujeito a aprovação da financeira. Promoções válidas enquanto durarem os estoques. Imagens meramente ilustrativas. Uno WAY 1.0 15/16 Nova Uno Way 1.0 15/16, R$ 36.990,00 á Vista. Consulte as devidas taxas e condições com nossos vendedores. Crédito sujeito a aprovação da financeira. Promoções válidas enquanto durarem os estoques. Imagens meramente ilustrativas. Strada Working 15/15: Strada Working 15/15, Básica  R$ 36.990,00 á vista ou entrada (R$23.540,00) + 48 parcelas de R$ 399,00. Taxa de 1,29%. CET de 20,20%. Total financiado R$ 42.696,32. Consulte as devidas taxas e condições com nossos vendedores. Crédito sujeito a aprovação da financeira. Promoções válidas enquanto durarem os estoques. Imagens meramente ilustrativas. Bravo Essence 15/16 Bravo Essence Completo 15/16, R$ 59.990,00 á Vista. Consulte as devidas taxas e condições com nossos vendedores. Crédito sujeito a aprovação da financeira. Promoções válidas enquanto durarem os estoques. Imagens meramente ilustrativas.</p>
+			<p class="texto-legal">JETTA à partir de $ 69.900,00*Veículo com Pintura Sólida, Foto meramente ilustrativa. UP! à partir de $ 29.900,00 com juro à partir de ZERO. * Veículo com pintura sólida, Foto meramente ilustrativa e Juro à partir de Zero com 60% de entrada e saldo em 24 vezes pelo Banco Volkswagen. FOX 1.0 com juro à partir de  ZERO * Foto meramente ilustrativa e Juro à partir de Zero com 62% de entrada e saldo em 25 vezes pelo Banco Volkswagen.</p>
 		</div>
 		<div class="container">
 			<div class="gl"><img src="img/logo_grupolider.jpg" align="center" alt=""></div>
-			
-			<!-- Menu das montadoras -->
-			
-			<?php include('includes/menu-marcas.php'); ?>
-			
+			<div class="marcas-logos2">
+			<ul>
+				<li><a href="chevrolet.php"><img src="img/logo-chevrolet.png" alt=""></a></li>
+				<li><a href="fiat.php"><img src="img/logo-fiat.png" alt=""></a></li>
+				<li><a href="ford.php"><img src="img/logo-ford.png" alt=""></a></li>
+				<li><a href="toyota.php"><img src="img/logo-toyota.png" alt=""></a></li>
+				<li><a href="wolksvagen.php"><img src="img/logo-vw.png" alt=""></a></li>
+				<li><a href="honda.php"><img src="img/logo_honda.png" alt=""></a></li>
+			</ul>
+		</div>
 		<div class="desen"><a href="https://3aworldwide.com.br"><img src="img/ass3a.jpg" height="16" width="154" alt=""></a></div>
 		</div>
 
@@ -131,10 +134,6 @@
 
 		<!-- Bootstrap -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		
-		<!-- Masked Input -->
-		<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>		
-
 
 		<!-- Scripts da Página -->
 		<script src="js/scripts.js"></script>
@@ -145,11 +144,11 @@
 
 				////////////////////// Preencher os selects de carros e concessionárias
 
-				preencheCarros('#carro', 3);
+				preencheCarros('#carro', 1);
 
-				preencheConcessionarias('#concessionaria', 3);
+				preencheConcessionarias('#concessionaria', 1);
 
-				preencheConcessionarias('#contato-concessionarias', 3);
+				preencheConcessionarias('#contato-concessionarias', 1);
 
 				////////////////////// Obter todos os dados das concessionárias para mostrar na seção contatos
 
@@ -169,16 +168,6 @@
 			});
 
 		</script>
-
-		<!--Start of Zopim Live Chat Script-->
-		<script type="text/javascript">
-		window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
-		d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
-		_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
-		$.src="//v2.zopim.com/?3G7d1HpIyeHG0OzFVanP58J3e0mRLAOe";z.t=+new Date;$.
-		type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
-		</script>
-		<!--End of Zopim Live Chat Script-->
 
 
 <?php require_once('includes/footer.php'); ?>

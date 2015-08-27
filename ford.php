@@ -6,6 +6,7 @@
 
 		</div>
 		</div>
+		</nav>
 		<!-- ----- fim container e row ----- -->
 
 		<!-- baner estatico -->

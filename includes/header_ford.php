@@ -27,9 +27,10 @@
 
 	<body>
 	<!-- ---------------  MENU ---------------- -->
+	<nav class="menu">
 	<div class="container">
 		<div class="row">
-			<nav class="menu">
+		
 				<img src="img/logo-ford2.png" height="64" width="82" alt="" class="col-md-1">
 				<ul class="col-md-9 ford">
 					<li><a href="javascript:void(0)" data-scroll="ford_banner-oferta_01">KA</a></li>
