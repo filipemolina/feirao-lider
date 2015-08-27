@@ -31,7 +31,7 @@
 		<div class="row">
 			<nav class="menu">
 				<img src="img/logo_honda.png" height="64" width="82" alt="" class="col-md-1">
-				<ul class="col-md-9">
+				<ul class="col-md-9 honda">
 					<li><a href="javascript:void(0)" data-scroll="honda_banner-oferta_01">Fan 125</a></li>
 					<li><a href="javascript:void(0)" data-scroll="honda_banner-oferta_01">Lead 110</a></li>
 					<li><a href="javascript:void(0)" data-scroll="honda_banner-oferta_02">XRE 330</a></li>

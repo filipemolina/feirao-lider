@@ -82,7 +82,7 @@ function preencheTabela(dados)
 		  data: {'objeto' : 'concessionarias', campos : { 'id' : dados[dado].id_carro } },
 		  success: function(data)
 			{ 
-				var resultado = JSON.parse(data); 
+				var resultado = JSON.parse(data);
 				App.concessionaria = resultado.nome;
 			},
 		  async:false

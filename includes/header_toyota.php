@@ -32,9 +32,9 @@
 			<nav class="menu">
 				<img src="img/logo-toyota.png" height="64" width="82" alt="" class="col-md-1">
 				<ul class="col-md-9 toyota">
-					<li><a href="javascript:void(0)" data-scroll="honda_banner-oferta_01">ETIOS X</a></li>
-					<li><a href="javascript:void(0)" data-scroll="honda_banner-oferta_02">HILUX</a></li>
-					<li><a href="javascript:void(0)" data-scroll="honda_banner-oferta_03">SW4</a></li>
+					<li><a href="javascript:void(0)" data-scroll="toyota_banner-oferta_01">ETIOS X</a></li>
+					<li><a href="javascript:void(0)" data-scroll="toyota_banner-oferta_02">HILUX</a></li>
+					<li><a href="javascript:void(0)" data-scroll="toyota_banner-oferta_03">SW4</a></li>
 					<li><a href="javascript:void(0)" data-scroll="duvidas">Dúvidas?</a></li>
 				</ul>
 				<a href="javascript:void(0)" class="col-md-2 btn-chat-toyota chat-zopim">Chat online</a>
