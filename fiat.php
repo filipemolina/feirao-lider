@@ -1,4 +1,4 @@
-<?php require_once('includes/header.php'); ?>
+<?php require_once('includes/header_fiat.php'); ?>
 
 		<!-- Conteúdo -->
 
@@ -15,19 +15,12 @@
 		<!-- ---- marcas ---- -->
 
 		<h1 class="titulo-marca">VEJA OFERTAS DE OUTROS FABRICANTES</h1>
-		<div class="marcas-logos">
-			<ul>
-				<li><a href="chevrolet.php"><img src="img/logo-chevrolet.png" alt=""></a></li>
-				<li><a href="fiat.php"><img src="img/logo-fiat.png" alt=""></a></li>
-				<li><a href="ford.php"><img src="img/logo-ford.png" alt=""></a></li>
-				<li><a href="toyota.php"><img src="img/logo-toyota.png" alt=""></a></li>
-				<li><a href="wolksvagen.php"><img src="img/logo-vw.png" alt=""></a></li>
-				<li><a href="honda.php"><img src="img/logo_honda.png" alt=""></a></li>
-			</ul>
-		</div>
-		<div class="honda_banner-oferta_01"></div>
-		<div class="honda_banner-oferta_02"></div>
-		<div class="honda_banner-oferta_03"></div>
+		
+		<?php require_once('includes/menu-marcas.php'); ?>
+		<div class="fiat_banner-oferta_01"></div>
+		<div class="fiat_banner-oferta_02"></div>
+		<div class="fiat_banner-oferta_03"></div>
+
 
 
 

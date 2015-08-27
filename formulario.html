@@ -1,0 +1,169 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+ 
+fieldset {
+    border: 0;
+}
+ 
+body, input, select, textarea, button {
+    font-family: sans-serif;
+    font-size: 1em;
+        padding-left: 50px;
+    padding-top: 40px;
+}
+ 
+.grupo:before, .grupo:after {
+    content: " ";
+    display: table;
+}
+ 
+.grupo:after {
+    clear: both;
+}
+ 
+.campo {
+    margin-bottom: 1em;
+}
+ 
+.campo label {
+    margin-bottom: 0.2em;
+    color: #666;
+    display: block;
+}
+ 
+fieldset.grupo .campo {
+    margin-right: 1em;
+}
+ 
+.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="url"],
+.campo input[type="tel"],
+.campo select,
+.campo textarea {
+    padding: 0.2em;
+    border: 1px solid #CCC;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+ 
+.campo select option {
+    padding-right: 1em;
+}
+ 
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #FFC;
+}
+ 
+.campo label.checkbox {
+    color: #000;
+    display: inline-block;
+    margin-right: 1em;
+}
+ 
+.botao {
+    font-size: 1.5em;
+    background: #F90;
+    border: 0;
+    margin-bottom: 1em;
+    color: #FFF;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+ 
+.botao:hover {
+    background: #FB0;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+ 
+.botao, select, label.checkbox {
+    cursor: pointer;
+}
+.enviar{
+padding: 0 !important;
+}
+h1{
+        padding-bottom: 20px;
+    color: #ff0000;
+}
+
+ </style>   
+
+
+
+
+
+</head>
+
+
+
+<body>
+    <form action="#" method="post">
+    <h1>Cadastro de Usuário</h1>
+        <fieldset>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome" style="width: 10em" value="" />
+                </div>
+                <div class="campo">
+                    <label for="snome">Usuário</label>
+                    <input type="text" id="snome" name="snome" style="width: 10em" value="" />
+                </div>
+            </fieldset>
+            <div class="campo">
+                <label>Sexo</label>
+                <label>
+                    <input type="radio" name="sexo" value="masculino"> Masculino
+                </label>
+                <label>
+                    <input type="radio" name="sexo" value="feminino"> Feminino
+                </label>
+            </div>
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input type="text" id="email" name="email" style="width: 20em" value="" />
+            </div>
+
+            <div class="campo">
+                <label for="telefone">idade</label>
+                <input type="text" id="telefone" name="telefone" style="width: 10em"  value="" />
+            </div>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="cidade">Cpf</label>
+                    <input type="text" id="cidade" name="cidade" style="width: 10em" value="" />
+                </div>
+                <div class="campo">
+                    <label for="estado">Bairro</label>
+                    <select name="estado" id="estado">
+                        <option value="">--</option>
+                        <option value="PR">Barra de Maricá</option>
+                    </select>
+                </div>
+
+                            <div class="campo">
+                <label for="telefone">Senha</label>
+                <input type="text" id="telefone" name="telefone" style="width: 10em"  value="" />
+            </div>
+            <div class="campo">
+                <label for="telefone">Confirmar senha</label>
+                <input type="text" id="telefone" name="telefone" style="width: 10em"  value="" />
+            </div>
+            </fieldset>
+     
+            <button type="submit" class="enviar" name="submit">Enviar</button>
+     
+        </fieldset>
+    </form>
+</body>
+
+</html>
