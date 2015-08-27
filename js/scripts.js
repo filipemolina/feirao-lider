@@ -64,7 +64,7 @@ function dadosConcessionarias(id_concessionaria)
 function scrollar(classe)
 {
 	$('html, body').animate({
-        scrollTop: $("."+classe).offset().top
+        scrollTop: $("."+classe).offset().top - 80
     }, 1000);
 }
 
