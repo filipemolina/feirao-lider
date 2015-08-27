@@ -33,7 +33,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 	{
 		// Caso o usuário não tenha fornecido campos para pesquisar, retornar todos os resultados da tabela
 
-		$resultado = $conexao->select($objeto);
+		$resultado = $conexao->select($objeto, '', 'DESC');
 		echo json_encode($resultado);
 	}
 }

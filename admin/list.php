@@ -20,7 +20,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 	{
 		// Retornar uma lista de dados
 
-		$resultados = $conexao->select('contatos');
+		$resultados = $conexao->select('contatos', '', 'DESC');
 
 		echo json_encode($resultados);
 		exit;

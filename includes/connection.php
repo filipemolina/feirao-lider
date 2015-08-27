@@ -12,15 +12,15 @@ class Connection
 
 	// Produção
 
-	private $host = 'localhost';
-	private $dbname = 'feirao-lider';
-	private $usuario = 'root';
-	private $senha = '';
-
 	// private $host = 'localhost';
 	// private $dbname = 'feirao-lider';
-	// private $usuario = 'grupolider';
-	// private $senha = 'grupolider2015';
+	// private $usuario = 'root';
+	// private $senha = '';
+
+	private $host = 'localhost';
+	private $dbname = 'feirao-lider';
+	private $usuario = 'grupolider';
+	private $senha = 'grupolider2015';
 
 	// Variável para guardar os erros que podem ocorrer
 
@@ -129,7 +129,7 @@ class Connection
 
 	// Obter os dados do banco
 
-	public function select($tabela, $campos = "")
+	public function select($tabela, $campos = "", $ordem = "ASC")
 	{
 		// Iniciar a query
 
@@ -137,7 +137,7 @@ class Connection
 
 		if($campos == "")
 		{
-			$resultado = $this->pdo->query("SELECT * FROM $tabela;");
+			$resultado = $this->pdo->query("SELECT * FROM $tabela ORDER BY id $ordem;");
 
 			if(!$resultado)
 			{
@@ -172,7 +172,7 @@ class Connection
 				}
 				else
 				{
-					$query .= ";";
+					$query .= " ORDER BY id $ordem;";
 				}
 
 				// Incrementar o contador
@@ -215,6 +215,16 @@ class Connection
 	{
 		$query = "DELETE FROM $tabela WHERE id = $id;";
 
+		$executa = $this->pdo->query($query);
+
+		if($executa)
+		{
+			echo 1;
+		}
+		else
+		{
+			echo $this->pdo->errorInfo();
+		}
 
 	}
 

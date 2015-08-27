@@ -6,7 +6,7 @@ App.concessionarias = [];
 
 function trocaConteudo(mensagem)
 {
-	$("div.modal-body p").html(mensagem);
+	$("div#myModal div.modal-body p").html(mensagem);
 }
 
 function trocaId(id)
@@ -263,7 +263,29 @@ $(function(){
 
 		var id = $("#id_excluir").val();
 
-		
+		$.post('excluir.php', { tabela : 'contatos', id : id }, function(data)
+		{
+
+			if(data == 1)
+			{
+				// Preencher novamente os dados da tabela
+
+				$.post('busca.php', { objeto : 'contatos' }, function(data){
+
+					var dados = JSON.parse(data);
+
+					preencheTabela(dados);
+
+				});
+
+			}
+			else
+			{
+				console.log("Mensagem de Erro: ");
+				console.log(data);
+			}
+
+		});
 
 	});
 

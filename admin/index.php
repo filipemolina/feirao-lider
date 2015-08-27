@@ -173,8 +173,8 @@
 	        <p>Deseja realmente excluir esse contato?</p>
 	      </div>
 	      <div class="modal-footer">
-	      	<button type="button" class="btn btn-danger" data-dismiss="modal">Excluir</button>
-	        <button id="btn_excluir" type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+	      	<button type="button" class="btn btn-danger" data-dismiss="modal" id="btn_excluir">Excluir</button>
+	        <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
 	        <input type="hidden" value="" id="id_excluir">
 	      </div>
 	    </div><!-- /.modal-content -->
