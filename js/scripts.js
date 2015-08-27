@@ -89,6 +89,7 @@ $(function(){
 		var carro = $("#carro").val();
 		var concessionaria = $("#concessionaria").val();
 		var mensagem = $("#mensagem").val();
+		var montadora = $("#montadora").val();
 
 		if(nome == '')
 		{
@@ -192,6 +193,34 @@ $(function(){
 					$("#carro").val(0);
 					$("#concessionaria").val(0);
 
+					// Enviar o email
+
+					$.post("includes/mail.php", {
+						nome : nome,
+						email : email,
+						telefone : telefone,
+						mensagem : mensagem,
+						entrada : entrada,
+						prestacoes : prestacoes,
+						carro : carro,
+						concessionaria : concessionaria,
+						montadora : montadora
+
+					}, function(data){
+
+						if(data == 1)
+						{
+							console.log('Enviou o email');
+							console.log(data);
+						}
+						else
+						{
+							console.log("Não enviou o email");
+							console.log(data);
+						}
+
+					});
+
 			})
 		}
 
@@ -218,5 +247,9 @@ $(function(){
 		$zopim.livechat.window.show();
 
 	});
+
+	// Máscara do telefone
+
+	$("#telefone").mask("(99) 9999-9999?9");
 
 })

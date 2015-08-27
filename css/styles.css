@@ -759,3 +759,8 @@ banners Toyota ----------------*/
 {
 	color: #4f5050 !important;
 }
+
+td.centralizar
+{
+	text-align: center;
+}

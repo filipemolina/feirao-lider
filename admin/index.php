@@ -127,6 +127,7 @@
 				<th class="centralizar">Carro</th>
 				<th class="centralizar">Concessionária</th>
 				<th class="centralizar">Mensagem</th>
+				<th class="centralizar" >Ações</th>
 			</tr>
 		</table>
 
@@ -152,6 +153,29 @@
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<iframe id="txtArea1" style="display:none"></iframe>
+
+	<!-- Modal de Confirmação de Exclusão -->
+
+	<div class="modal fade" id="modalExcluir">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title">Atenção</h4>
+	      </div>
+	      <div class="modal-body">
+	        <p>Deseja realmente excluir esse contato?</p>
+	      </div>
+	      <div class="modal-footer">
+	      	<button type="button" class="btn btn-danger" data-dismiss="modal">Excluir</button>
+	        <button id="btn_excluir" type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+	        <input type="hidden" value="" id="id_excluir">
 	      </div>
 	    </div><!-- /.modal-content -->
 	  </div><!-- /.modal-dialog -->

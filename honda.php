@@ -37,11 +37,13 @@
 					
 				</div>
 
+				<input type="hidden" name="montadora" id="montadora" value="6">
+
 				<div class="col-md-4">
 					<span class="name-forms">Nome</span>
 					<input type="text" class="form-control" name="nome" id="nome"/>
 					<span class="name-forms">Email</span>
-					<input type="text" class="form-control" name="email" id="email"/>
+					<input type="email" class="form-control" name="email" id="email"/>
 					<span class="name-forms">Telefone</span>
 					<input type="text" class="form-control" name="telefone" id="telefone"/>
 				</div>
@@ -128,6 +130,11 @@
 
 		<!-- Bootstrap -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+		
+		<!-- Masked Input -->
+		<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>		
+
 
 		<!-- Scripts da Página -->
 		<script src="js/scripts.js"></script>

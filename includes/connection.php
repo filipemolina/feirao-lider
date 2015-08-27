@@ -12,15 +12,15 @@ class Connection
 
 	// Produção
 
-	// private $host = 'localhost';
-	// private $dbname = 'feirao-lider';
-	// private $usuario = 'root';
-	// private $senha = '';
-
 	private $host = 'localhost';
 	private $dbname = 'feirao-lider';
-	private $usuario = 'grupolider';
-	private $senha = 'grupolider2015';
+	private $usuario = 'root';
+	private $senha = '';
+
+	// private $host = 'localhost';
+	// private $dbname = 'feirao-lider';
+	// private $usuario = 'grupolider';
+	// private $senha = 'grupolider2015';
 
 	// Variável para guardar os erros que podem ocorrer
 
@@ -210,6 +210,29 @@ class Connection
 			}
 		}
 	}
+
+	public function excluir($tabela, $id)
+	{
+		$query = "DELETE FROM $tabela WHERE id = $id;";
+
+
+	}
+
+	public function montadoraPorConcessionaria($id)
+	{
+		$resultado = $this->select("concessionarias", array( 'id' => $id));
+
+		if(count($resultado) > 0)
+		{
+			$montadora = $this->select("montadoras", array('id' => $resultado[0]['id_montadora']));
+
+			if(count($montadora) > 0)
+			{
+				return $montadora[0]['nome'];
+			}
+		}
+	}
+
 
 	public function confirmar($id, $confirmado)
 	{

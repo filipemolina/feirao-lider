@@ -1,12 +1,17 @@
 App = {};
 
 App.inscritos = 0;
-App.carro = "";
-App.concessionaria = "";
+App.carros = [];
+App.concessionarias = [];
 
 function trocaConteudo(mensagem)
 {
 	$("div.modal-body p").html(mensagem);
+}
+
+function trocaId(id)
+{
+	$("#id_excluir").val(id);
 }
 
 function fnExcelReport()
@@ -50,58 +55,61 @@ function preencheTabela(dados)
 	var checkbox;
 	var carteirinha;
 
-	// Esvaziar a tabela
+	// Obter uma lista de carros
 
-	$(".table").find("tr:gt(0)").remove();
+	$.post('busca.php', { objeto : 'carros' }, function(data){
 
-	// Zerar o número de inscritor
+		var vetor_carros = JSON.parse(data);
 
-	App.inscritos = 0;
+		for(carro in vetor_carros)
+		{
+			App.carros[vetor_carros[carro].id] = vetor_carros[carro].nome;
+		}
 
-	for(dado in dados)
-	{
-		//Obter o nome do carro
+		// Obter uma lista de concessionarias
 
-		$.ajax({
-		  type: 'POST',
-		  url: "busca.php",
-		  data: {'objeto' : 'carros', campos : { 'id' : dados[dado].id_carro } },
-		  success: function(data)
-			{ 
-				var resultado = JSON.parse(data); 
-				App.carro = resultado.nome;
-			},
-		  async:false
+		$.post('busca.php', { objeto : 'concessionarias' }, function(data){
+
+			var vetor_concessionarias = JSON.parse(data);
+
+			for(concessionaria in vetor_concessionarias)
+			{
+				App.concessionarias[vetor_concessionarias[concessionaria].id] = vetor_concessionarias[concessionaria].nome;
+			}
+
+			/////////////////////// Iniciar o processo
+
+			// Esvaziar a tabela
+
+			$(".table").find("tr:gt(0)").remove();
+
+			// Zerar o número de inscritor
+
+			App.inscritos = 0;
+
+			for(dado in dados)
+			{
+				// Incrementar a quantidade de inscritos
+
+				App.inscritos++;
+
+				var id_carro = parseInt(dados[dado].id_carro);
+				var id_concessionaria = parseInt(dados[dado].id_concessionaria)
+
+				$(".table").append("<tr><td>"+dados[dado].id+"</td><td>"+dados[dado].nome+"</td><td>"+dados[dado].email+"</td><td>"+dados[dado].tel+"</td><td>"+dados[dado].entrada+"</td><td class='centralizar'>"+dados[dado].prestacoes+"</td><td class='centralizar'>"+App.carros[id_carro]+"</td><td>"+App.concessionarias[id_concessionaria]+"</td><td class='centralizar'><a class='abre-modal btn btn-info' href='javascript:void(0)' onclick='trocaConteudo(\""+dados[dado].mensagem+"\")' data-toggle='modal' data-target='#myModal'>Ler</a></td><td><a href='javascript:void(0)'' class='btn btn-danger' onclick='javascript:trocaId("+dados[dado].id+")' data-toggle='modal' data-target='#modalExcluir'>Excluir</a></td></tr>");
+			}
+
+			// Mostrar os valores nos boxes de resultados
+
+			// Totais
+
+			$(".inscricoes .panel-body .num_total").html(App.inscritos);
+
+			$(".table, .resultados").addClass("fadeInUp animated");	
+
 		});
 
-		//Obter o nome da concessionaria
-
-		$.ajax({
-		  type: 'POST',
-		  url: "busca.php",
-		  data: {'objeto' : 'concessionarias', campos : { 'id' : dados[dado].id_carro } },
-		  success: function(data)
-			{ 
-				var resultado = JSON.parse(data);
-				App.concessionaria = resultado.nome;
-			},
-		  async:false
-		});
-
-		// Incrementar a quantidade de inscritos
-
-		App.inscritos++;
-
-		$(".table").append("<tr><td>"+dados[dado].id+"</td><td>"+dados[dado].nome+"</td><td>"+dados[dado].email+"</td><td>"+dados[dado].tel+"</td><td>"+dados[dado].entrada+"</td><td class='centralizar'>"+dados[dado].prestacoes+"</td><td class='centralizar'>"+App.carro+"</td><td class='centralizar'>"+App.concessionaria+"</td><td><a class='abre-modal' href='javascript:void(0)' onclick='trocaConteudo(\""+dados[dado].mensagem+"\")' data-toggle='modal' data-target='#myModal'>Mensagem</a></td></tr>");
-	}
-
-	// Mostrar os valores nos boxes de resultados
-
-	// Totais
-
-	$(".inscricoes .panel-body .num_total").html(App.inscritos);
-
-	$(".table, .resultados").addClass("fadeInUp animated");
+	});
 }
 
 // Função que obtém todas as concessionárias cadastradas e preenche o select de relatórios
@@ -246,6 +254,16 @@ $(function(){
 		{
 			$("a#link-exportar").attr('href', 'exportar.php');
 		}
+
+	});
+
+	////////////////////////////////////////////////////// Excluir
+
+	$("#btn_excluir").click(function(){
+
+		var id = $("#id_excluir").val();
+
+		
 
 	});
 
