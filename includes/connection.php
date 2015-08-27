@@ -12,10 +12,15 @@ class Connection
 
 	// Produção
 
+	// private $host = 'localhost';
+	// private $dbname = 'feirao-lider';
+	// private $usuario = 'root';
+	// private $senha = '';
+
 	private $host = 'localhost';
 	private $dbname = 'feirao-lider';
-	private $usuario = 'root';
-	private $senha = '';
+	private $usuario = 'grupolider';
+	private $senha = 'grupolider2015';
 
 	// Variável para guardar os erros que podem ocorrer
 
@@ -63,8 +68,8 @@ class Connection
 		// Obter todos os campos da tabela para serem gravados
 
 		$campos = array_keys($dados);
-		$campos_implode = implode(",", $campos);
-		$campos_param = implode(",:", $campos);
+		$campos_implode = implode(", ", $campos);
+		$campos_param = implode(", :", $campos);
 
 		// Obter os valores para os campos da tabela
 
@@ -86,6 +91,8 @@ class Connection
 		// Passar o parâmetro $valor por referência (&). Caso contrário, todos os campos
 		// da tabela assumiriam o último valor enviado
 
+		$teste = '';
+
 		foreach($valores as &$valor)
 		{
 			$tipo = (is_numeric($valor)) ? PDO::PARAM_INT : PDO::PARAM_STR;
@@ -105,10 +112,14 @@ class Connection
 		{
 	   		$this->erros = array();
 	   		$this->erros[] = $this->pdo->errorInfo();
+
+	   		return "";
 		}
 		else
 		{
 	   		$this->erros[] = $this->pdo->errorInfo();
+
+	   		return "False ".$this->pdo->errorInfo();
 		}
 	}
 

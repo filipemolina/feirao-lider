@@ -15,7 +15,9 @@
 		<!-- ---- marcas ---- -->
 
 		<h1 class="titulo-marca">VEJA OFERTAS DE OUTROS FABRICANTES</h1>
+
 		<?php require_once('includes/menu-marcas.php'); ?>	
+
 		<div class="honda_banner-oferta_01"></div>
 		<div class="honda_banner-oferta_02"></div>
 		<div class="honda_banner-oferta_03"></div>
@@ -97,8 +99,8 @@
 				<select name="" class="form-control" id="contato-concessionarias">
 					<option value="">Selecione uma concessionária</option>
 				</select>
-				<h3 id="nome-concessionaria">Volkswagem Recreio - Rio de Janeiro, RJ</h3>
-				<h4 id="telefone-concessionaria">(21) 2176-9400</h4>
+				<h3 id="nome-concessionaria"></h3>
+				<h4 id="telefone-concessionaria"></h4>
 			</div>
 			<div class="chat col-md-6">
 				<h2>Chat<img src="img/chat.jpg" style="margin-top:-20px;"></h2>
@@ -113,12 +115,12 @@
 			<div class="gl"><img src="img/logo_grupolider.jpg" align="center" alt=""></div>
 			<div class="marcas-logos2">
 			<ul>
-				<li><a href=""><img src="img/logo-chevrolet.png" alt=""></a></li>
-				<li><a href=""><img src="img/logo-fiat.png" alt=""></a></li>
-				<li><a href=""><img src="img/logo-ford.png" alt=""></a></li>
-				<li><a href=""><img src="img/logo-toyota.png" alt=""></a></li>
-				<li><a href=""><img src="img/logo-vw.png" alt=""></a></li>
-				<li><a href=""><img src="img/logo_honda.png" alt=""></a></li>
+				<li><a href="chevrolet.php"><img src="img/logo-chevrolet.png" alt=""></a></li>
+				<li><a href="fiat.php"><img src="img/logo-fiat.png" alt=""></a></li>
+				<li><a href="ford.php"><img src="img/logo-ford.png" alt=""></a></li>
+				<li><a href="toyota.php"><img src="img/logo-toyota.png" alt=""></a></li>
+				<li><a href="wolksvagen.php"><img src="img/logo-vw.png" alt=""></a></li>
+				<li><a href="honda.php"><img src="img/logo_honda.png" alt=""></a></li>
 			</ul>
 		</div>
 		<div class="desen"><a href="https://3aworldwide.com.br"><img src="img/ass3a.jpg" height="16" width="154" alt=""></a></div>
@@ -141,11 +143,11 @@
 
 				////////////////////// Preencher os selects de carros e concessionárias
 
-				preencheCarros('#carro', 6);
+				preencheCarros('#carro', 4);
 
-				preencheConcessionarias('#concessionaria', 6);
+				preencheConcessionarias('#concessionaria', 4);
 
-				preencheConcessionarias('#contato-concessionarias', 6);
+				preencheConcessionarias('#contato-concessionarias', 4);
 
 				////////////////////// Obter todos os dados das concessionárias para mostrar na seção contatos
 

@@ -113,13 +113,13 @@ $(function(){
 			msg.push("Preencha o campo prestações.");
 		}
 
-		if(carro == '')
+		if(carro == 0)
 		{
 			erros = true;
 			msg.push("Preencha o campo carro.");
 		}
 
-		if(concessionaria == '')
+		if(concessionaria == 0)
 		{
 			erros = true;
 			msg.push("Preencha o campo concessionária.");
@@ -158,6 +158,9 @@ $(function(){
 				concessionaria : concessionaria,
 
 			}, function(data){
+
+				console.log("Data:");
+				console.log(data);
 
 				// Caso não tenha havido nenhum erro
 				
