@@ -31,7 +31,7 @@
 		<div class="row">
 			<nav class="menu">
 				<img src="img/logo_honda.png" height="64" width="82" alt="" class="col-md-1">
-				<ul class="col-md-9">
+				<ul class="col-md-9 honda">
 					<li>Fan 125</li>
 					<li>Lead 110</li>
 					<li>XRE 330</li>
@@ -40,7 +40,7 @@
 					<li>CB1000R</li>
 					<li>Dúvidas?</li>
 				</ul>
-				<a href="" class="col-md-2 class="btn-chat" ">Chat online</a>
+				<a href="" class="col-md-2 btn-chat-honda" >Chat online</a>
 			</nav>
 
 	<!-- ----------------------- END MENU --------------------- -->

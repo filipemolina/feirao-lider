@@ -26,7 +26,7 @@ body{
 	font-weight: bold;
 	text-transform: uppercase;
 }
-.ford li{ color:#033776 !important;}.fiat li{color:#a10006 !important;}.toyota li{}.chevrolet li{ color: #4f5050 !important;}.vw li{}
+.honda li a{color: #ff0000;}.ford li a{ color:#033776 !important;}.fiat li a{color:#a10006 !important;}.toyota li a{} .chevrolet li a{ color: #4f5050 !important;}.vw li a{ color: #0b64aa;}
 .menu a {
 	text-decoration: none;
 	color:#ffffff;
@@ -96,6 +96,32 @@ body{
 	margin-top: 15px;
 	box-shadow: 2px 3px #885f03;
 }
+.btn-chat-honda {
+	float: left;
+	text-decoration: none;
+	color:#ffffff;
+	text-transform: uppercase;
+	background: #ff0000;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 21px;
+	font-weight: bold;
+	margin-top: 15px;
+	box-shadow: 2px 3px #ba0000;
+}
+.btn-chat-vw {
+	float: left;
+	text-decoration: none;
+	color:#ffffff;
+	text-transform: uppercase;
+	background: #0b64aa;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 21px;
+	font-weight: bold;
+	margin-top: 15px;
+	box-shadow: 2px 3px #084678;
+}
 /* ------------ END MENU ------------ */
 
 .banner{
@@ -150,7 +176,7 @@ body{
 	height: 670px;
 	background-color: #f7f7f7;
 	margin-top: 2px;
-
+	position: relative;
 }
 .honda_banner-oferta_02{
 	background: url(../img/honda/Site_FeiraoOnline_Interna-HONDA_2.jpg) no-repeat;
@@ -159,7 +185,7 @@ body{
 	height: 670px;
 	background-color: #e4ebed;
 	margin: 2px;
-	
+	position: relative;
 }
 .honda_banner-oferta_03{
 	background: url(../img/honda/Site_FeiraoOnline_Interna-HONDA_3.jpg) no-repeat;
@@ -168,7 +194,7 @@ body{
 	height: 670px;
 	background-color: #f5f6f7;
 	margin: 2px;
-	
+	position: relative;
 }
 /*end banners honda*/
 
@@ -180,7 +206,7 @@ body{
 	height: 670px;
 	background-color: #f7f7f7;
 	margin-top: 2px;
-
+	position: relative;
 }
 .chevrolet_banner-oferta_02{
 	background: url(../img/chevrolet/Site_FeiraoOnline_Chevrolet_2.jpg) no-repeat;
@@ -189,7 +215,7 @@ body{
 	height: 670px;
 	background-color: #e4ebed;
 	margin: 2px;
-	
+	position: relative;
 }
 .chevrolet_banner-oferta_03{
 	background: url(../img/chevrolet/Site_FeiraoOnline_Chevrolet_3.jpg) no-repeat;
@@ -198,7 +224,7 @@ body{
 	height: 670px;
 	background-color: #f5f6f7;
 	margin: 2px;
-	
+	position: relative;
 }
 .chevrolet_banner-oferta_04{
 	background: url(../img/chevrolet/Site_FeiraoOnline_Chevrolet_4.jpg) no-repeat;
@@ -207,7 +233,7 @@ body{
 	height: 670px;
 	background-color: #e6eced;
 	margin: 2px;
-	
+	position: relative;
 }
 /*end banners chevrolet*/
 
@@ -219,7 +245,7 @@ body{
 	height: 670px;
 	background-color: #f7f7f7;
 	margin-top: 2px;
-
+	position: relative;
 }
 .fiat_banner-oferta_02{
 	background: url(../img/fiat/Site_FeiraoOnline_Interna-FIAT_2.jpg) no-repeat;
@@ -228,7 +254,7 @@ body{
 	height: 670px;
 	background-color: #e4ebed;
 	margin: 2px;
-	
+	position: relative;
 }
 .fiat_banner-oferta_03{
 	background: url(../img/fiat/Site_FeiraoOnline_Interna-FIAT_3.jpg) no-repeat;
@@ -237,7 +263,7 @@ body{
 	height: 670px;
 	background-color: #f5f6f7;
 	margin: 2px;
-	
+	position: relative;
 }
 /*end banners fiat*/
 
@@ -249,7 +275,7 @@ body{
 	height: 670px;
 	background-color: #fbfbfb;
 	margin-top: 2px;
-
+	position: relative;
 }
 .ford_banner-oferta_02{
 	background: url(../img/ford/Site_FeiraoOnline_Ford_2.jpg) no-repeat;
@@ -258,7 +284,7 @@ body{
 	height: 670px;
 	background-color: #edf2f2;
 	margin: 2px;
-	
+	position: relative;
 }
 .ford_banner-oferta_03{
 	background: url(../img/ford/Site_FeiraoOnline_Ford_3.jpg) no-repeat;
@@ -267,7 +293,7 @@ body{
 	height: 670px;
 	background-color: #f9f9f9;
 	margin: 2px;
-	
+	position: relative;
 }
 .ford_banner-oferta_04{
 	background: url(../img/ford/Site_FeiraoOnline_Ford_4.jpg) no-repeat;
@@ -276,47 +302,70 @@ body{
 	height: 670px;
 	background-color: #e6eced;
 	margin: 2px;
-	
+	position: relative;
 }
 /*end banners ford*/
-/*---------- banners Toyota ----------------*/
+/*----------
+banners Toyota ----------------*/
 .toyota_banner-oferta_01{
-	background: url(../img/ford/Site_FeiraoOnline_Ford_1.jpg) no-repeat;
+	background: url(../img/toyota/Site_FeiraoOnline_Toyota_1.jpg) no-repeat;
 	width: 100%;
 	background-position: center;
 	height: 670px;
-	background-color: #fbfbfb;
+	background-color: #f7f7f7;
 	margin-top: 2px;
-
+	position: relative;
 }
 .toyota_banner-oferta_02{
-	background: url(../img/ford/Site_FeiraoOnline_Ford_2.jpg) no-repeat;
-	width: 100%;
-	background-position: center;
-	height: 670px;
-	background-color: #edf2f2;
-	margin: 2px;
-	
-}
-.toyota_banner-oferta_03{
-	background: url(../img/ford/Site_FeiraoOnline_Ford_3.jpg) no-repeat;
-	width: 100%;
-	background-position: center;
-	height: 670px;
-	background-color: #f9f9f9;
-	margin: 2px;
-	
-}
-.toyota_banner-oferta_04{
-	background: url(../img/ford/Site_FeiraoOnline_Ford_4.jpg) no-repeat;
+	background: url(../img/toyota/Site_FeiraoOnline_Toyota_2.jpg) no-repeat;
 	width: 100%;
 	background-position: center;
 	height: 670px;
 	background-color: #e6eced;
 	margin: 2px;
-	
+	position: relative;
+}
+.toyota_banner-oferta_03{
+	background: url(../img/toyota/Site_FeiraoOnline_Toyota_3.jpg) no-repeat;
+	width: 100%;
+	background-position: center;
+	height: 670px;
+	background-color: #f7f7f7;
+	margin: 2px;
+	position: relative;
 }
 /*end banners Toyota*/
+
+/*---------- banners VW ----------------*/
+.vw_banner-oferta_01{
+	background: url(../img/volks/Site_FeiraoOnline_Interna-VOLKS_1.jpg) no-repeat;
+	width: 100%;
+	background-position: center;
+	height: 670px;
+	background-color: #f7f7f7;
+	margin-top: 2px;
+	position: relative;
+}
+.vw_banner-oferta_02{
+	background: url(../img/volks/Site_FeiraoOnline_Interna-VOLKS_2.jpg) no-repeat;
+	width: 100%;
+	background-position: center;
+	height: 670px;
+	background-color: #e6eced;
+	margin: 2px;
+	position: relative;
+}
+.vw_banner-oferta_03{
+	background: url(../img/volks/Site_FeiraoOnline_Interna-VOLKS_3.jpg) no-repeat;
+	width: 100%;
+	background-position: center;
+	height: 670px;
+	background-color: #f7f7f7;
+	margin: 2px;
+	position: relative;
+	
+}
+/*end banners VW*/
 
 .titulo-form{
 	font-family: 'Source Sans Pro', sans-serif;
@@ -432,8 +481,8 @@ body{
 }
 .texto-legal{
 	font-size: 11px;
-    margin-top: 50px;
-    text-align: justify;
+	margin-top: 50px;
+	text-align: justify;
 	font-family: 'Source Sans Pro', sans-serif;
 	color: #7f7f7f;
 }
@@ -450,9 +499,9 @@ body{
 h2.index
 {
 	text-align: center;
-    font-size: 15px;
-    font-weight: bold;
-    color: #777;
+	font-size: 15px;
+	font-weight: bold;
+	color: #777;
 }
 
 div.gl.index
@@ -461,8 +510,247 @@ div.gl.index
 }
 
 h3.copy {
-    text-align: center;
-    font-size: 12px;
-    font-weight: bold;
-    color: #777;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	color: #777;
 }
+
+/*--------------- banners honda -------------------*/
+.honda_banner-oferta_01 a{
+	text-decoration: none;
+	color: #ff0000;
+	padding:5px;
+	display: block;
+	width: 180px;
+	position: absolute;
+	left: 50%;
+	margin-left: -90px;
+	bottom: 50px;
+}
+.honda_banner-oferta_02 a{
+	text-decoration: none;
+	color: #ff0000;
+	padding:5px;
+	display: block;
+	width: 180px;
+	position: absolute;
+	left: 50%;
+	margin-left: -90px;
+	bottom: 50px;
+}
+.honda_banner-oferta_03 a{
+	text-decoration: none;
+	color: #ff0000;
+	padding:5px;
+	display: block;
+	width: 180px;
+	position: absolute;
+	left: 50%;
+	margin-left: -90px;
+	bottom: 50px;
+	
+}
+/*end banners honda*/
+
+/*---------- banners chevrolet ----------------*/
+.chevrolet_banner-oferta_01 a{
+	text-decoration: none;
+	color:#4f5050;
+	padding:5px;
+	display: block;
+	width: 180px;
+	position: absolute;
+	left: 50%;
+	margin-left: -90px;
+	bottom: 50px;
+}
+.chevrolet_banner-oferta_02 a{
+	text-decoration: none;
+	color:#4f5050;
+	padding:5px;
+	display: block;
+	width: 180px;
+	position: absolute;
+	left: 50%;
+	margin-left: -90px;
+	bottom: 50px;
+}
+.chevrolet_banner-oferta_03 a{
+	text-decoration: none;
+	color: #4f5050;
+	padding:5px;
+	display: block;
+	width: 180px;
+	position: absolute;
+	left: 50%;
+	margin-left: -90px;
+	bottom: 50px;
+}
+.chevrolet_banner-oferta_04 a{
+	text-decoration: none;
+	color: #4f5050;
+	padding:5px;
+	display: block;
+	width: 180px;
+	position: absolute;
+	left: 50%;
+	margin-left: -90px;
+	bottom: 50px;
+}
+/*end banners chevrolet*/
+
+/*---------- banners fiat ----------------*/
+.fiat_banner-oferta_01 a{
+	text-decoration: none;
+	color: #a10006;
+	padding:5px;
+	display: block;
+	width: 180px;
+	position: absolute;
+	left: 50%;
+	margin-left: -90px;
+	bottom: 50px;
+}
+.fiat_banner-oferta_02 a{
+	text-decoration: none;
+	color: #a10006;
+	padding:5px;
+	display: block;
+	width: 180px;
+	position: absolute;
+	left: 50%;
+	margin-left: -90px;
+	bottom: 50px;
+}
+.fiat_banner-oferta_03 a{
+	text-decoration: none;
+	color: #a10006;
+	padding:5px;
+	display: block;
+	width: 180px;
+	position: absolute;
+	left: 50%;
+	margin-left: -90px;
+	bottom: 50px;
+}
+/*end banners fiat*/
+
+/*---------- banners ford ----------------*/
+.ford_banner-oferta_01 a{
+	text-decoration: none;
+	color:#033776;
+	padding:5px;
+	display: block;
+	width: 180px;
+	position: absolute;
+	left: 50%;
+	margin-left: -90px;
+	bottom: 50px;
+}
+.ford_banner-oferta_02 a{
+	text-decoration: none;
+	color:#033776;
+	padding:5px;
+	display: block;
+	width: 180px;
+	position: absolute;
+	left: 50%;
+	margin-left: -90px;
+	bottom: 50px;
+}
+.ford_banner-oferta_03 a{
+	text-decoration: none;
+	color:#033776;
+	padding:5px;
+	display: block;
+	width: 180px;
+	position: absolute;
+	left: 50%;
+	margin-left: -90px;
+	bottom: 50px;
+}
+.ford_banner-oferta_04 a{
+	text-decoration: none;
+	color:#033776;
+	padding:5px;
+	display: block;
+	width: 180px;
+	position: absolute;
+	left: 50%;
+	margin-left: -90px;
+	bottom: 50px;
+}
+/*end banners ford*/
+/*----------
+banners Toyota ----------------*/
+.toyota_banner-oferta_01 a{
+	text-decoration: none;
+	color:#ffffff;
+	padding:5px;
+	display: block;
+	width: 180px;
+	position: absolute;
+	left: 50%;
+	margin-left: -90px;
+	bottom: 50px;
+}
+.toyota_banner-oferta_02 a{
+	text-decoration: none;
+	color:#ffffff;
+	padding:5px;
+	display: block;
+	width: 180px;
+	position: absolute;
+	left: 50%;
+	margin-left: -90px;
+	bottom: 50px;
+}
+.toyota_banner-oferta_03 a{
+	text-decoration: none;
+	color:#ffffff;
+	padding:5px;
+	display: block;
+	width: 180px;
+	position: absolute;
+	left: 50%;
+	margin-left: -90px;
+	bottom: 50px;
+}
+/*end banners Toyota*/
+
+/*---------- banners VW ----------------*/
+.vw_banner-oferta_01 a{
+	text-decoration: none;
+	color: #ffffff;
+	padding:5px;
+	display: block;
+	width: 180px;
+	position: absolute;
+	left: 50%;
+	margin-left: -90px;
+	bottom: 50px;
+}
+.vw_banner-oferta_02 a{
+	text-decoration: none;
+	color: #ffffff;
+	padding:5px;
+	display: block;
+	width: 180px;
+	position: absolute;
+	left: 50%;
+	margin-left: -90px;
+	bottom: 50px;
+}
+.vw_banner-oferta_03 a{
+	text-decoration: none;
+	color: #ffffff;
+	padding:5px;
+	display: block;
+	width: 180px;
+	position: absolute;
+	left: 50%;
+	margin-left: -90px;
+	bottom: 50px;
+}
+/*end banners VW*/

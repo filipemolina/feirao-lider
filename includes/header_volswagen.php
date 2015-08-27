@@ -32,15 +32,12 @@
 			<nav class="menu">
 				<img src="img/logo-vw.png" height="64" width="82" alt="" class="col-md-1">
 				<ul class="col-md-9 vw">
-					<li>Fan 125</li>
-					<li>Lead 110</li>
-					<li>XRE 330</li>
-					<li>Biz 125</li>
-					<li>CBR 650F</li>
-					<li>CB1000R</li>
+					<li>up!</li>
+					<li>jetta</li>
+					<li>fox</li>
 					<li>Dúvidas?</li>
 				</ul>
-				<a href="" class="col-md-2 class="btn-chat" ">Chat online</a>
+				<a href="" class="col-md-2 btn-chat-vw">Chat online</a>
 			</nav>
 
 	<!-- ----------------------- END MENU --------------------- -->
