@@ -27,9 +27,10 @@
 
 	<body>
 	<!-- ---------------  MENU ---------------- -->
+	<nav class="menu">
 	<div class="container">
 		<div class="row">
-			<nav class="menu">
+
 				<img src="img/logo-fiat.png" height="64" width="82" alt="" class="col-md-1">
 				<ul class="col-md-9 fiat">
 					<li><a href="javascript:void(0)" data-scroll="fiat_banner-oferta_01">SIENA</a></li>

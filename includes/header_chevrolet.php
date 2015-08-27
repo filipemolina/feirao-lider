@@ -27,9 +27,10 @@
 
 	<body>
 	<!-- ---------------  MENU ---------------- -->
+	<nav class="menu">
 	<div class="container">
 		<div class="row">
-			<nav class="menu">
+			
 				<img src="img/logo-chevrolet2.png" height="64" width="82" alt="" class="col-md-1">
 				<ul class="col-md-9 chevrolet">
 					<li><a href="javascript:void(0)" data-scroll="chevrolet_banner-oferta_01">Onix</a></li>
@@ -38,6 +39,6 @@
 					<li><a href="javascript:void(0)" data-scroll="duvidas">Dúvidas?</a></li>
 				</ul>
 				<a href="javascript:void(0)" class="col-md-2 btn-chat-chevrolet chat-zopim">Chat online</a>
-			</nav>
+			
 
 	<!-- ----------------------- END MENU --------------------- -->

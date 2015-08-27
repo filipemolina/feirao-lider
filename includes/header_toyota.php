@@ -27,9 +27,9 @@
 
 	<body>
 	<!-- ---------------  MENU ---------------- -->
+	<nav class="menu">
 	<div class="container">
 		<div class="row">
-			<nav class="menu">
 				<img src="img/logo-toyota.png" height="64" width="82" alt="" class="col-md-1">
 				<ul class="col-md-9 toyota">
 					<li><a href="javascript:void(0)" data-scroll="toyota_banner-oferta_01">ETIOS X</a></li>
