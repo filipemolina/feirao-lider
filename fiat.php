@@ -92,7 +92,7 @@
 			</form>
 		</div>
 		<div class="container">
-			<h1 class="titulo-form"><span>TIRE SUAS </span></br>DÚVIDAS</h1>
+			<h1 class="titulo-form duvidas"><span>TIRE SUAS </span></br>DÚVIDAS</h1>
 			<div class="tel col-md-6">
 				<h2>Telefone<img src="img/tel.jpg" style="margin-top:-20px;"></h2>
 				<p>Encontre a concessionária mais perto de você</p>

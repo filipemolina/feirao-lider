@@ -32,13 +32,13 @@
 			<nav class="menu">
 				<img src="img/logo-fiat.png" height="64" width="82" alt="" class="col-md-1">
 				<ul class="col-md-9 fiat">
-					<li><a href="javascript:void(0)">SIENA</a></li>
-					<li><a href="javascript:void(0)">UNO VIVACE</a></li>
-					<li><a href="javascript:void(0)">PALIO</a></li>
-					<li><a href="javascript:void(0)">UNO WAY</a></li>
-					<li><a href="javascript:void(0)">STRADA</a></li>
-					<li><a href="javascript:void(0)">BRAVO</a></li>
-					<li><a href="javascript:void(0)">Dúvidas?</a></li>
+					<li><a href="javascript:void(0)" data-scroll="fiat_banner-oferta_01">SIENA</a></li>
+					<li><a href="javascript:void(0)" data-scroll="fiat_banner-oferta_01">UNO VIVACE</a></li>
+					<li><a href="javascript:void(0)" data-scroll="fiat_banner-oferta_02">PALIO</a></li>
+					<li><a href="javascript:void(0)" data-scroll="fiat_banner-oferta_02">UNO WAY</a></li>
+					<li><a href="javascript:void(0)" data-scroll="fiat_banner-oferta_03">STRADA</a></li>
+					<li><a href="javascript:void(0)" data-scroll="fiat_banner-oferta_03">BRAVO</a></li>
+					<li><a href="javascript:void(0)" data-scroll="duvidas">Dúvidas?</a></li>
 				</ul>
 				<a href="" class="col-md-2 btn-chat-fiat">Chat online</a>
 			</nav>

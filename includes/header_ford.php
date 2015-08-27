@@ -32,11 +32,11 @@
 			<nav class="menu">
 				<img src="img/logo-ford2.png" height="64" width="82" alt="" class="col-md-1">
 				<ul class="col-md-9 ford">
-					<li>KA</li>
-					<li>FIESTA</li>
-					<li>ECOSPORT</li>
-					<li>RANGER</li>
-					<li>Dúvidas?</li>
+					<li><a href="javascript:void(0)" data-scroll="ford_banner-oferta_01">KA</a></li>
+					<li><a href="javascript:void(0)" data-scroll="ford_banner-oferta_02">FIESTA</a></li>
+					<li><a href="javascript:void(0)" data-scroll="ford_banner-oferta_03">ECOSPORT</a></li>
+					<li><a href="javascript:void(0)" data-scroll="ford_banner-oferta_04">RANGER</a></li>
+					<li><a href="javascript:void(0)" data-scroll="duvidas">Dúvidas?</a></li>
 				</ul>
 				<a href="" class="col-md-2 btn-chat-ford">Chat online</a>
 			</nav>
