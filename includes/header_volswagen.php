@@ -32,12 +32,9 @@
 			<nav class="menu">
 				<img src="img/logo-vw.png" height="64" width="82" alt="" class="col-md-1">
 				<ul class="col-md-9 vw">
-					<li><a href="javascript:void(0)" data-scroll="honda_banner-oferta_01">Fan 125</a></li>
-					<li><a href="javascript:void(0)" data-scroll="honda_banner-oferta_01">Lead 110</a></li>
-					<li><a href="javascript:void(0)" data-scroll="honda_banner-oferta_02">XRE 330</a></li>
-					<li><a href="javascript:void(0)" data-scroll="honda_banner-oferta_02">Biz 125</a></li>
-					<li><a href="javascript:void(0)" data-scroll="honda_banner-oferta_03">CBR 650F</a></li>
-					<li><a href="javascript:void(0)" data-scroll="honda_banner-oferta_03">CB1000R</a></li>
+					<li><a href="javascript:void(0)" data-scroll="honda_banner-oferta_01">Up!</a></li>
+					<li><a href="javascript:void(0)" data-scroll="honda_banner-oferta_01">Jetta</a></li>
+					<li><a href="javascript:void(0)" data-scroll="honda_banner-oferta_02">Fox</a></li>
 					<li><a href="javascript:void(0)" data-scroll="duvidas">Dúvidas?</a></li>
 				</ul>
 				<a href="javascript:void(0)" class="col-md-2 btn-chat chat-zopim">Chat online</a>

@@ -17,9 +17,9 @@
 		<h1 class="titulo-marca">VEJA OFERTAS DE OUTROS FABRICANTES</h1>
 		
 		<?php require_once('includes/menu-marcas.php'); ?>
-		<div class="fiat_banner-oferta_01"></div>
-		<div class="fiat_banner-oferta_02"></div>
-		<div class="fiat_banner-oferta_03"></div>
+		<div class="fiat_banner-oferta_01"><a href="" class="compre chat-zopim btn-chat-fiat">Compre agora</a></div>
+		<div class="fiat_banner-oferta_02"><a href="" class="compre chat-zopim btn-chat-fiat">Compre agora</a></div>
+		<div class="fiat_banner-oferta_03"><a href="" class="compre chat-zopim btn-chat-fiat">Compre agora</a></div>
 
 
 

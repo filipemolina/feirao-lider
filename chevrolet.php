@@ -19,10 +19,10 @@
 		<?php require_once('includes/menu-marcas.php'); ?>
 		
 
-		<div class="chevrolet_banner-oferta_01"></div>
-		<div class="chevrolet_banner-oferta_02"></div>
-		<div class="chevrolet_banner-oferta_03"></div>
-		<div class="chevrolet_banner-oferta_04"></div>
+		<div class="chevrolet_banner-oferta_01"><a href="" class="compre chat-zopim btn-chat-chevrolet">Compre agora</a></div>
+		<div class="chevrolet_banner-oferta_02"><a href="" class="compre chat-zopim btn-chat-chevrolet">Compre agora</a></div>
+		<div class="chevrolet_banner-oferta_03"><a href="" class="compre chat-zopim btn-chat-chevrolet">Compre agora</a></div>
+		<div class="chevrolet_banner-oferta_04"><a href="" class="compre chat-zopim btn-chat-chevrolet">Compre agora</a></div>
 
 
 

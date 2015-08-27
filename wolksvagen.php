@@ -15,12 +15,12 @@
 		<!-- ---- marcas ---- -->
 
 		<h1 class="titulo-marca">VEJA OFERTAS DE OUTROS FABRICANTES</h1>
-		
+
 		<?php require_once('includes/menu-marcas.php'); ?>
 
-		<div class="honda_banner-oferta_01"></div>
-		<div class="honda_banner-oferta_02"></div>
-		<div class="honda_banner-oferta_03"></div>
+		<div class="vw_banner-oferta_01"><a href="" class="compre chat-zopim btn-chat-vw">Compre agora</a></div>
+		<div class="vw_banner-oferta_02"><a href="" class="compre chat-zopim btn-chat-vw">Compre agora</a></div>
+		<div class="vw_banner-oferta_03"><a href="" class="compre chat-zopim btn-chat-vw">Compre agora</a></div>
 
 
 
@@ -109,7 +109,7 @@
 			</div>
 		</div>
 		<div class="container">	
-			<p class="texto-legal">Siena EL 1.0 completo 15/15, R$ 36.990,00 á vista ou entrada (R$23.300,00) + 48 parcelas de R$ 399,00. Taxa de 1,29%. CET de 19,13%. Total financiado R$ 42.486,56. Consulte as devidas taxas e condições com nossos vendedores. Crédito sujeito a aprovação da financeira. Promoções válidas enquanto durarem os estoques. Imagens meramente ilustrativas. Uno Vivace 2P 15/15: Uno Vivace Básica  2P 15/15, R$ 25.990,00 á vista ou entrada (R$18.400,00) + 60 parcelas deR$ 199,00. Taxa de 1,35%. CET de 21,38%. Total financiado R$ 30.354,40. Consulte as devidas taxas e condições com nossos vendedores. Crédito sujeito a aprovação da financeira. Promoções válidas enquanto durarem os estoques. Imagens meramente ilustrativas. Palio Fire 2P 15/16: Palio Fire Básica 2P 15/16, R$ 26.990,00 á vista ou entrada (R$16.740,00) + 48 parcelas de R$ 299,00. Taxa de 1,19%. CET de 19,13%. Total financiado R$ 31.105,44. Consulte as devidas taxas e condições com nossos vendedores. Crédito sujeito a aprovação da financeira. Promoções válidas enquanto durarem os estoques. Imagens meramente ilustrativas. Uno WAY 1.0 15/16 Nova Uno Way 1.0 15/16, R$ 36.990,00 á Vista. Consulte as devidas taxas e condições com nossos vendedores. Crédito sujeito a aprovação da financeira. Promoções válidas enquanto durarem os estoques. Imagens meramente ilustrativas. Strada Working 15/15: Strada Working 15/15, Básica  R$ 36.990,00 á vista ou entrada (R$23.540,00) + 48 parcelas de R$ 399,00. Taxa de 1,29%. CET de 20,20%. Total financiado R$ 42.696,32. Consulte as devidas taxas e condições com nossos vendedores. Crédito sujeito a aprovação da financeira. Promoções válidas enquanto durarem os estoques. Imagens meramente ilustrativas. Bravo Essence 15/16 Bravo Essence Completo 15/16, R$ 59.990,00 á Vista. Consulte as devidas taxas e condições com nossos vendedores. Crédito sujeito a aprovação da financeira. Promoções válidas enquanto durarem os estoques. Imagens meramente ilustrativas.</p>
+			<p class="texto-legal">JETTA à partir de $ 69.900,00*Veículo com Pintura Sólida, Foto meramente ilustrativa. UP! à partir de $ 29.900,00 com juro à partir de ZERO. * Veículo com pintura sólida, Foto meramente ilustrativa e Juro à partir de Zero com 60% de entrada e saldo em 24 vezes pelo Banco Volkswagen. FOX 1.0 com juro à partir de  ZERO * Foto meramente ilustrativa e Juro à partir de Zero com 62% de entrada e saldo em 25 vezes pelo Banco Volkswagen.</p>
 		</div>
 		<div class="container">
 			<div class="gl"><img src="img/logo_grupolider.jpg" align="center" alt=""></div>
