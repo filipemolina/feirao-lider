@@ -211,7 +211,9 @@ $(function(){
 
 	// Abrir o chat
 
-	$(".chat-zopim").click(function(){
+	$(".chat-zopim").click(function(e){
+
+		e.preventDefault();
 
 		$zopim.livechat.window.show();
 

@@ -105,7 +105,7 @@
 			<div class="chat col-md-6">
 				<h2>Chat<img src="img/chat.jpg" style="margin-top:-20px;"></h2>
 				<p>Fale com os nossos vendedores online</p>
-				<a href="javascript:void(0)" class="chat-zopim">Iniciar Chat</a>
+				<a href="" class="chat-zopim">Iniciar Chat</a>
 			</div>
 		</div>
 		<div class="container">	

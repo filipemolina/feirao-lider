@@ -29,7 +29,7 @@ body{
 .ford li{ color:#033776 !important;}.fiat li{color:#a10006 !important;}.toyota li{}.chevrolet li{ color: #4f5050 !important;}.vw li{}
 .menu a {
 	text-decoration: none;
-	color:#00f;
+	color:#fff;
 }
 .btn-chat-fiat {
 	float: left;
