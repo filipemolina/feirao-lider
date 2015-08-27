@@ -32,13 +32,11 @@
 			<nav class="menu">
 				<img src="img/logo-chevrolet2.png" height="64" width="82" alt="" class="col-md-1">
 				<ul class="col-md-9 chevrolet">
-					<li>Fan 125</li>
-					<li>Lead 110</li>
-					<li>XRE 330</li>
-					<li>Biz 125</li>
-					<li>CBR 650F</li>
-					<li>CB1000R</li>
-					<li>Dúvidas?</li>
+					<li><a href="javascript:void(0)" data-scroll="chevrolet_banner-oferta_01">Fan 125</a></li>
+					<li><a href="javascript:void(0)" data-scroll="chevrolet_banner-oferta_02">Lead 110</a></li>
+					<li><a href="javascript:void(0)" data-scroll="chevrolet_banner-oferta_03">XRE 330</a></li>
+					<li><a href="javascript:void(0)" data-scroll="chevrolet_banner-oferta_04">Biz 125</a></li>
+					<li><a href="javascript:void(0)" data-scroll="duvidas">Dúvidas?</a></li>
 				</ul>
 				<a href="" class="col-md-2 btn-chat-chevrolet">Chat online</a>
 			</nav>

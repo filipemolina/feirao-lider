@@ -61,6 +61,13 @@ function dadosConcessionarias(id_concessionaria)
 	});
 }
 
+function scrollar(classe)
+{
+	$('html, body').animate({
+        scrollTop: $("."+classe).offset().top
+    }, 1000);
+}
+
 $(function(){
 
 	///////////////////////////////////// As chamadas de eventos do jQuery devem ser inseridas aqui
@@ -192,6 +199,14 @@ $(function(){
 
 	});
 
-	
+	// Scroll do menu
+
+	$('nav.menu a').click(function(){
+
+		var elemento = $(this).data('scroll');
+
+		scrollar(elemento);
+
+	});
 
 })
