@@ -40,7 +40,7 @@
 					<li><a href="javascript:void(0)" data-scroll="honda_banner-oferta_03">CB1000R</a></li>
 					<li><a href="javascript:void(0)" data-scroll="duvidas">Dúvidas?</a></li>
 				</ul>
-				<a href="" class="col-md-2 class="btn-chat" ">Chat online</a>
+				<a href="javascript:void(0)" class="col-md-2 btn-chat chat-zopim">Chat online</a>
 			</nav>
 
 	<!-- ----------------------- END MENU --------------------- -->

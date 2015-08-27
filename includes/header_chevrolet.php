@@ -38,7 +38,7 @@
 					<li><a href="javascript:void(0)" data-scroll="chevrolet_banner-oferta_04">Biz 125</a></li>
 					<li><a href="javascript:void(0)" data-scroll="duvidas">Dúvidas?</a></li>
 				</ul>
-				<a href="" class="col-md-2 btn-chat-chevrolet">Chat online</a>
+				<a href="javascript:void(0)" class="col-md-2 btn-chat-chevrolet chat-zopim">Chat online</a>
 			</nav>
 
 	<!-- ----------------------- END MENU --------------------- -->

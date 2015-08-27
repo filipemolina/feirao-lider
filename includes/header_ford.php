@@ -38,7 +38,7 @@
 					<li><a href="javascript:void(0)" data-scroll="ford_banner-oferta_04">RANGER</a></li>
 					<li><a href="javascript:void(0)" data-scroll="duvidas">Dúvidas?</a></li>
 				</ul>
-				<a href="" class="col-md-2 btn-chat-ford">Chat online</a>
+				<a href="javascript:void(0)" class="col-md-2 btn-chat-ford chat-zopim">Chat online</a>
 			</nav>
 
 	<!-- ----------------------- END MENU --------------------- -->

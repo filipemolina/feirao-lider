@@ -201,11 +201,19 @@ $(function(){
 
 	// Scroll do menu
 
-	$('nav.menu a').click(function(){
+	$('nav.menu ul a').click(function(){
 
 		var elemento = $(this).data('scroll');
 
 		scrollar(elemento);
+
+	});
+
+	// Abrir o chat
+
+	$(".chat-zopim").click(function(){
+
+		$zopim.livechat.window.show();
 
 	});
 

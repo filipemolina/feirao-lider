@@ -37,7 +37,7 @@
 					<li><a href="javascript:void(0)" data-scroll="honda_banner-oferta_03">SW4</a></li>
 					<li><a href="javascript:void(0)" data-scroll="duvidas">Dúvidas?</a></li>
 				</ul>
-				<a href="" class="col-md-2 btn-chat-toyota">Chat online</a>
+				<a href="javascript:void(0)" class="col-md-2 btn-chat-toyota chat-zopim">Chat online</a>
 			</nav>
 
 	<!-- ----------------------- END MENU --------------------- -->
