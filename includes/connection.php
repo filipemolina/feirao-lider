@@ -12,15 +12,15 @@ class Connection
 
 	// Produção
 
-	// private $host = 'localhost';
-	// private $dbname = 'feirao-lider';
-	// private $usuario = 'root';
-	// private $senha = '';
-
 	private $host = 'localhost';
 	private $dbname = 'feirao-lider';
-	private $usuario = 'grupolider';
-	private $senha = 'grupolider2015';
+	private $usuario = 'root';
+	private $senha = '';
+
+	// private $host = 'localhost';
+	// private $dbname = 'feirao-lider';
+	// private $usuario = 'grupolider';
+	// private $senha = 'grupolider2015';
 
 	// Variável para guardar os erros que podem ocorrer
 

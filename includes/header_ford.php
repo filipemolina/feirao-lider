@@ -26,6 +26,8 @@
 	</head>
 
 	<body>
+	<?php include("tag_google.php"); ?>
+
 	<!-- ---------------  MENU ---------------- -->
 	<nav class="menu">
 	<div class="container">
